@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://bajrtxxftc6wt"]
+
+[ext_resource type="Texture2D" uid="uid://dwlsbfldmr36f" path="res://Scene/stuffscene/imgg/cpkku_dark.png" id="1_i1ysy"]
+[ext_resource type="Script" uid="uid://blpn6pycf4004" path="res://Scene/stuffscene/scriptstuff/credit.gd" id="1_petaw"]
+
+[node name="Node2D" type="Node2D" unique_id=264957255]
+script = ExtResource("1_petaw")
+
+[node name="Control" type="Control" parent="." unique_id=423201679]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1154.0
+offset_bottom = 650.0
+
+[node name="btnExit" type="Button" parent="Control" unique_id=91174926]
+layout_mode = 0
+offset_left = 976.0
+offset_top = 13.0
+offset_right = 1131.0
+offset_bottom = 77.0
+text = "Exit"
+
+[node name="CpkkuDark" type="Sprite2D" parent="Control" unique_id=813724852]
+position = Vector2(584, 71)
+texture = ExtResource("1_i1ysy")
+
+[node name="Title" type="Label" parent="Control" unique_id=1640205557]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -148.0
+offset_top = 295.0
+offset_right = 153.0
+offset_bottom = 327.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.88235295, 0.18039216, 0.1882353, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 24
+text = "Development Team"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Title4" type="Label" parent="Control" unique_id=2127691335]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -187.0
+offset_top = 360.0
+offset_right = 193.0
+offset_bottom = 435.0
+grow_horizontal = 2
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 16
+text = "673380317-5  Thanakorn Waingsima
+673380310-9  Jittipat Taweekhot
+673380337-9  Phumrapee Nambubpa"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Title2" type="Label" parent="Control" unique_id=1645896659]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -167.0
+offset_top = 177.0
+offset_right = 207.0
+offset_bottom = 226.0
+grow_horizontal = 2
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 16
+text = "At College of Computing, Khon Kaen University
+By  Asst.Dr. Wachirawut Thamviset"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Title3" type="Label" parent="Control" unique_id=1657901293]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -148.0
+offset_top = 129.0
+offset_right = 153.0
+offset_bottom = 161.0
+grow_horizontal = 2
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 24
+text = "Computer Game Development  Course 2026   "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Control/btnExit" to="." method="_on_btn_exit_pressed"]

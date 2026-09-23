@@ -1,0 +1,88 @@
+[gd_scene format=3 uid="uid://dvtpu87fyidoj"]
+
+[ext_resource type="Script" uid="uid://v1102188qasa" path="res://Scene/stuffscene/scriptstuff/menu.gd" id="1_lnfwq"]
+[ext_resource type="Texture2D" uid="uid://duaberje4i2cc" path="res://Scene/stuffscene/imgg/bggbetaz.png" id="2_hm3lu"]
+[ext_resource type="Texture2D" uid="uid://weewcd2da5tr" path="res://Scene/stuffscene/imgg/LOGOBETA.png" id="3_hm3lu"]
+
+[node name="Menu" type="Node2D" unique_id=94230789]
+script = ExtResource("1_lnfwq")
+
+[node name="UI" type="Control" parent="." unique_id=398703829]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1154.0
+offset_bottom = 649.0
+
+[node name="TextureRect" type="TextureRect" parent="UI" unique_id=1619521014]
+layout_mode = 0
+offset_right = 1154.0
+offset_bottom = 647.0
+texture = ExtResource("2_hm3lu")
+expand_mode = 1
+
+[node name="btnOpt" type="Button" parent="UI" unique_id=1304748344]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -149.0
+offset_top = -42.5
+offset_right = 153.0
+offset_bottom = 19.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "LOAD"
+
+[node name="btnStart" type="Button" parent="UI" unique_id=1769061722]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -149.0
+offset_top = -114.5
+offset_right = 152.0
+offset_bottom = -54.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "START"
+
+[node name="btnCre" type="Button" parent="UI" unique_id=232883912]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -148.0
+offset_top = 114.5
+offset_right = 154.0
+offset_bottom = 176.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "CREDIT"
+
+[node name="btnCon" type="Button" parent="UI" unique_id=1523918724]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -149.0
+offset_top = 38.5
+offset_right = 153.0
+offset_bottom = 100.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "OPTIONS"
+
+[node name="LOGO" type="Sprite2D" parent="." unique_id=931553585]
+position = Vector2(581, 128)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("3_hm3lu")
+
+[connection signal="pressed" from="UI/btnCre" to="." method="_on_btn_cre_pressed"]
